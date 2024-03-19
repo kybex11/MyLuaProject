@@ -1,15 +1,18 @@
-print("Create new password")
-password = io.read()
-print("Password created")
+function main() then
+    print("Create new password")
+    password = io.read()
+    print("Password created")
 
-print("Enter password")
-pass = io.read()
+    print("Enter password")
+    pass = io.read()
 
-if (pass == password) then
-    print("Password corrected")
- else
-    print("Password incorrect")
-    print("Try again")
- end
- 
+    if (pass == password) then
+        print("Password corrected")
+     else
+        print("Password incorrect")
+        print("Try again")
+        main()
+    end
+end
 
+main()
