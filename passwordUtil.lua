@@ -1,4 +1,4 @@
-function main() then
+function main()
     print("Create new password")
     password = io.read()
     print("Password created")
